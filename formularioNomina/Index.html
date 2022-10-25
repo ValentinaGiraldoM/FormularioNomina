@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="Col">
+<head>
+     <meta charset="UTF-8"> <!--conjunto de carateres -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" 
+    crossorigin="anonymous">
+
+    <title>Nomina</title>
+    <style>
+        body
+        {
+            background-color: peachpuff;
+        }
+        form
+        {
+            text-align: center;
+            color: brown;
+            font-family: verdana;
+            font-size:x-large; 
+        }
+        input
+        {
+            width: 500px; text-align: center; 
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1 style="text-align: center; font-family: fantasy">Nómina</h1>
+    
+    <form action="" method="get">
+
+        <label for="TipoDocumentos">Tipo de Documento:</label><br>
+        <input list="TipoDocumentos" name="TipoDocu">
+    <datalist id="TipoDocumentos">
+        <option value="Cedula de Ciudadania">
+        <option value="Documento de Identidad">
+        <option value="edula Extrangera">
+    </datalist> <br><br>
+
+        <!-- <input type="radio" id="DcmtA" name="TipoDocumento" value="CedulaCiudadania">
+        <label for="DcmtA">Cedula de Ciudadania</label><br>
+        <input type="radio" id="DcmtB" name="TipoDocumento" value="DocumentIdentidad">
+        <label for="DcmtB">Documento de Identidad</label><br>
+        <input type="radio" id="DcmtC" name="TipoDocumento" value="CedulaExtrangera">
+        <label for="DcmtC">Cedula Extrangera</label>
+        <br><br> -->
+
+
+        <label for="Document">Documento:</label><br>
+        <input style= type="text" id="Document" name="Documento" 
+        required placeholder="ingrese Numero de documento" 
+        autofocus pattern="[A-Za-z0-9]{5,10}"><br><br>
+
+        <label for="fname">Nombre:</label><br>
+        <input type="text" id="fname" name="fname"
+        required placeholder="ingrese Nombre" 
+        autofocus pattern="[A-Za-z0-9]{5,10}"><br><br>
+
+        <label for="lname">Apellidos:</label><br>
+        <input type="text" id="lname" name="Apellidos"
+        required placeholder="ingrese Apellidos" 
+        autofocus pattern="[A-Za-z0-9]{5,10}"><br><br>
+
+        <label for="salary" min="100000" max="100000000">Salario:</label><br>
+        <input type="number" id="salary" name="Salario"
+        required placeholder="ingrese Salario" 
+        autofocus pattern="[A-Za-z0-9]{5,10}"><br><br>
+
+        <label for="Dtrabajados">Dias Trabajados:</label><br>
+        <input type="number" id="Dtrabajados" name="DiasTrabajados"
+        required placeholder="ingrese los Numero Trabajados" 
+        autofocus pattern="[A-Za-z0-9]{5,10}"><br><br>
+
+        <input type="submit" value="Enviar" style="background-color: rgb(128, 67, 67); color: white";
+        color: brown >
+        
+      </form>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" 
+integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" 
+crossorigin="anonymous"></script>
+</body>
+</html>
